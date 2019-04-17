@@ -1,0 +1,28 @@
+{{> navigation}}
+
+<div id="create-listing">
+    <form action="#/createItem" method="post">
+        <div class="container">
+            <h1>Create item</h1>
+            <p>Fill in this form to create your item.</p>
+            <hr>
+
+            <p>Title</p>
+            <input type="text" placeholder="Enter title" name="title">
+
+            <p>Description</p>
+            <input type="text" placeholder="Enter Description" name="description">
+
+            <p>Item Image URL</p>
+            <input type="text" placeholder="Enter item pictureUrl" name="pictureUrl">
+
+            <p>Item Price</p>
+            <input type="number" placeholder="Enter item price" name="price">
+
+            <hr>
+            <button type="submit" class="registerbtn">Create</button>
+        </div>
+    </form>
+</div>
+
+{{> footer}}

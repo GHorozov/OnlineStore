@@ -1,0 +1,17 @@
+{{> navigation}}
+
+<div id="item-listings">
+    <h1>All items</h1>
+    <div id="listings">
+
+        {{#each items}}
+
+            {{> item}}
+
+            {{else}}
+                <p class="no-items">No items in database.</p>
+        {{/each}}
+    </div>
+</div>
+
+{{> footer}}

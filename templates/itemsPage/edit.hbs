@@ -1,0 +1,28 @@
+{{> navigation}}
+
+<div id="edit-listing">
+    <form action="#/edit/{{itemId}}" method="post">
+        <div class="container">
+            <h1>Edit item</h1>
+            <p>Fill in this form to edit your item.</p>
+            <hr>
+
+            <p>Title</p>
+            <input type="text" placeholder="Enter title" name="title" value="{{item.title}}">
+
+            <p>Description</p>
+            <input type="text" placeholder="Enter Description" name="description" value="{{item.description}}">
+
+            <p>Item Image URL</p>
+            <input type="text" placeholder="Enter item pictureUrl" name="pictureUrl" value="{{item.pictureUrl}}">
+
+            <p>Item Price</p>
+            <input type="number" placeholder="Enter item price" name="price" value="{{item.price}}">
+
+            <hr>
+            <button type="submit" class="registerbtn">Edit</button>
+        </div>
+    </form>
+</div>
+
+{{> footer}}
